@@ -12,14 +12,12 @@
                         Conseil <em>financier</em><br>
                         &amp; investissement
                     </h1>
-
                     <p class="home-hero__description">
                         Banque d’affaires indépendante, IMPAXIS Capital accompagne les<br class="d-none d-lg-block">
                         entreprises et les investisseurs dans leurs opérations stratégiques,<br class="d-none d-lg-block">
                         leurs financements et leurs projets de croissance en Afrique de<br class="d-none d-lg-block">
                         l’Ouest et centrale.
                     </p>
-
                     <a href="{{ route('front.expertises') }}" class="btn home-hero__button">Notre expertises</a>
             </div>
 
@@ -61,6 +59,7 @@
                         <strong>Couverture totale de la zone UEMOA, CEMAC</strong>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </section>
