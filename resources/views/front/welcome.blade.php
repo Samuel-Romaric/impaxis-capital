@@ -65,7 +65,7 @@
         </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container mb-5 mb-lg-0 mt-5 mt-lg-0">
             <div class="section__heading text-center">
                 <h2 class="section__title mb-4">La confiance des grands acteurs<br>économiques</h2>
@@ -97,7 +97,7 @@
         </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container">
             <div class="section__heading text-center">
                 <h2 class="section__title mb-2">Nous connaître</h2>
@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <section class="page-section team-section">
+    <section class="page-section team-section fade-up">
         <div class="container">
             <div class="section__heading text-center">
                 <h2 class="section__title text-white">Équipe</h2>
@@ -195,7 +195,7 @@
         </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container">
             <div class="section__heading text-center">
                 <h2 class="section__title">Transactions Récentes</h2>
@@ -237,7 +237,7 @@
         </div>
     </section>
 
-    <section class="page-section" style="background-color: #D0D8F2;">
+    <section class="page-section fade-up" style="background-color: #D0D8F2;">
         <div class="container">
             <div class="section__heading">
                 <h2 class="section__title">Nos dernières actualités</h2>
@@ -267,37 +267,7 @@
         </div>
     </section>
 
-    {{-- <section class="page-section" style="background-color: #D0D8F2;">
-        <div class="container">
-            <div class="section__heading">
-                <h2 class="section__title">Nos dernières actualités</h2>
-            </div>
-            <div class="row g-4">
-                @foreach ([0, 1, 2] as $articleIndex)
-                    <div class="col-lg-4">
-                        <article class="news-card">
-                            <img src="{{ asset('front/assets/images/news/article-default.png') }}"
-                                 class="news-card__image"
-                                 alt="Actualité IMPAXIS Capital">
-
-                            <div class="news-card__body">
-                                <span class="news-card__category">Conseil financier</span>
-                                <h3>Accompagnement stratégique d’un groupe agroalimentaire</h3>
-                                <p>Participation aux échanges sur l’épargne longue, le financement des économies africaines et les marchés capitaux.</p>
-                                <a href="#">Voir la publication</a>
-                            </div>
-                        </article>
-                    </div>
-                @endforeach
-            </div>
-
-            <div class="text-center">
-                <a href="{{ route('front.actualities') }}" class="btn news-section__button">Voir tout</a>
-            </div>
-        </div>
-    </section> --}}
-
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-5">

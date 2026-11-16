@@ -24,7 +24,7 @@
         </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container">
             <div class="row align-items-stretch g-5">
                 <div class="col-lg-6">
@@ -61,11 +61,11 @@
         </div>
     </section>
 
-    <section class="page-section" style="background: #4268b7; color: #fff;">
+    <section class="page-section fade-up" style="background: #4268b7; color: #fff;">
         <div class="container">
             <div class="row align-items-stretch g-5">
                 <div class="col-lg-6">
-                    <img class="section__image img-fluid" src="{{ asset('front/assets/images/financement.png') }}" alt="Financement structuré">
+                    <img class="section__image img-fluid" src="{{ asset('front/assets/images/financement-2.png') }}" alt="Financement structuré">
                 </div>
                 <div class="col-lg-6">
                     <div class="section__heading">
@@ -93,7 +93,7 @@
         </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container">
             <div class="row align-items-stretch g-5">
                 <div class="col-lg-6">

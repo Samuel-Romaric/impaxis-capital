@@ -15,7 +15,7 @@
         </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-5">

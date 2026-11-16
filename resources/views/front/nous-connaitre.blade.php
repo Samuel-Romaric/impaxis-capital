@@ -35,7 +35,7 @@
         </div>
     </section>
 
-        <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container mb-5 mb-lg-0 mt-5 mt-lg-0">
             <div class="section__heading text-center">
                 <h2 class="section__title mb-4">La confiance des grands acteurs<br>économiques</h2>
@@ -66,7 +66,7 @@
         </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container">
             <div class="row align-items-stretch gx-xl-5">
                 <div class="col-lg-6">
@@ -85,7 +85,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="section__image">
-                        <img src="{{ asset('front/assets/images/histoire.png') }}" 
+                        <img src="{{ asset('front/assets/images/histoire-2.png') }}" 
                         class="section__image img-fluid" alt="Ville africaine moderne">
                     </div>
                 </div>
@@ -93,7 +93,7 @@
         </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container">
             <div class="section__heading text-center">
                 <h2 class="section__title mb-2">Nous connaître</h2>
@@ -143,7 +143,7 @@
         </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container">
             <div class="row align-items-stretch gx-xl-5">
                 <div class="col-lg-6">
@@ -159,7 +159,7 @@
         </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container">
             <div class="d-flex align-items-center">
                 <h2 class="section__title">Nos valeurs</h2>
@@ -211,7 +211,7 @@
         </div>
     </section>
 
-    <section class="coverage-section" style="background: #D0D8F2">
+    <section class="coverage-section fade-up" style="background: #D0D8F2">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7">
@@ -269,7 +269,7 @@
         </div>
     </section>
 
-    <section class="page-section team-section">
+    <section class="page-section team-section fade-up">
         <div class="container">
             <div class="section__heading text-center">
                 <h2 class="section__title text-white">Équipe</h2>

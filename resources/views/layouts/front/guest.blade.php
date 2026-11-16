@@ -181,6 +181,32 @@
         @include('layouts.front.partials.footer')
 
         <script src="{{ asset('front/assets/css/bootstrap-5.1.3/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('front/assets/js/jquery-4.min.js') }}"></script>
+        <script>
+            $(document).ready(function() {
+                function verifierScroll() {
+                    var hauteurFenetre = $(window).height();
+                    var positionScroll = $(window).scrollTop();
+
+                    $('.fade-up').each(function() {
+                        var positionElement = $(this).offset().top;
+
+                        // Déclenche l'animation quand l'élément arrive à 85% de la hauteur de l'écran
+                        if (positionElement < (positionScroll + hauteurFenetre * 0.85)) {
+                            $(this).addClass('visible');
+                        }
+                    });
+                }
+
+                // Exécuter au chargement de la page (pour les éléments déjà visibles en haut)
+                verifierScroll();
+
+                // Exécuter à chaque fois que l'utilisateur fait défiler la page
+                $(window).on('scroll', function() {
+                    verifierScroll();
+                });
+            });
+        </script>
         @stack('scripts')
     </body>
 </html>

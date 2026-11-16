@@ -23,7 +23,7 @@
         </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section fade-up">
         <div class="container">
             {{-- <div class="section__heading text-center">
                 <h2 class="section__title">Transactions Récentes</h2>
@@ -42,7 +42,7 @@
                     ['logo' => 'sipres', 'name' => 'SIPRES', 'color' => '#1976a8'],
                     ['logo' => 'wf', 'name' => 'WF', 'color' => '#d5af47'],
                 ] as $transaction)
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 fade-up">
                         <article class="transaction-card">
                             <div class="transaction-card__logo transaction-card__logo--{{ $transaction['logo'] }}"
                                  style="color: {{ $transaction['color'] }}">
