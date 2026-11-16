@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('active')) {
+// if (!function_exists('active')) {
     /**
      * Determine if the given route is active.
      *
@@ -18,4 +18,4 @@ if (!function_exists('active')) {
 
         return '';
     }
-}
+// }
