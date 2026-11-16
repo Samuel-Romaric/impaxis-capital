@@ -15,9 +15,9 @@
                 <div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
                     <ul class="navbar-nav main-nav align-items-lg-end gap-lg-4 gap-3 mt-3 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link {{ active('front.welcome')  }}" href="{{ route('front.welcome') }}">Accueil</a>
+                            <a class="nav-link {{ request()->routeIs('front.welcome') ? 'active' : '' }}" href="{{ route('front.welcome') }}">Accueil</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link {{ active('front.nous-connaitre') }}" href="{{ route('front.nous-connaitre') }}">Nous connaître</a></li>
+                        <li class="nav-item"><a class="nav-link {{ request()->routeIs('front.nous-connaitre') ? 'active' : '' }}" href="{{ route('front.nous-connaitre') }}">Nous connaître</a></li>
                         {{-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle {{ request()->routeIs('front.nous-connaitre') ? 'active' : '' }}"
                             href="{{ route('front.nous-connaitre') }}" id="aboutMenu" role="button"
@@ -27,9 +27,9 @@
                                 <li><a class="dropdown-item" href="{{ route('front.nous-connaitre') }}#equipe">Notre équipe</a></li>
                             </ul>
                         </li> --}}
-                        <li class="nav-item"><a class="nav-link {{ active('front.expertises') }} " href="{{ route('front.expertises') }}">Expertises</a></li>
-                        <li class="nav-item"><a class="nav-link {{ active('front.transactions') }} " href="{{ route('front.transactions') }}">Nos transactions</a></li>
-                        <li class="nav-item"><a class="nav-link {{ active('front.actualities') }} " href="{{ route('front.actualities') }}">Actualités</a></li>
+                        <li class="nav-item"><a class="nav-link {{ request()->routeIs('front.expertises') ? 'active' : '' }}" href="{{ route('front.expertises') }}">Expertises</a></li>
+                        <li class="nav-item"><a class="nav-link {{ request()->routeIs('front.transactions') ? 'active' : '' }}" href="{{ route('front.transactions') }}">Nos transactions</a></li>
+                        <li class="nav-item"><a class="nav-link {{ request()->routeIs('front.actualities') ? 'active' : '' }}" href="{{ route('front.actualities') }}">Actualités</a></li>
                     </ul>
 
                     <a class="btn btn-contact ms-lg-4" href="{{ route('front.contact') }}">Contact</a>
