@@ -6,7 +6,7 @@
 
 @section('content')
     <section class="home-hero">
-        <div class="container">
+        <div class="container" style="min-width: 1150px !important;">
             <div class="home-hero__content">
                     <h1 class="home-hero__title">
                         Conseil <em>financier</em><br>
