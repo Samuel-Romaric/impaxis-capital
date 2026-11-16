@@ -63,7 +63,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
 
@@ -85,9 +84,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div>
-                        <img src="{{ asset('front/assets/images/histoire.png') }}"
-                            class="section__image img-fluid" alt="Ville africaine moderne">
+                    <div class="section__image">
+                        <img src="{{ asset('front/assets/images/histoire.png') }}" 
+                        class="section__image img-fluid" alt="Ville africaine moderne">
                     </div>
                 </div>
             </div>

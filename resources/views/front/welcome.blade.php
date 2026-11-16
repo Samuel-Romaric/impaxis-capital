@@ -7,64 +7,61 @@
 @section('content')
     <section class="home-hero">
         <div class="container">
-            <div class="container">
-                <div class="home-hero__content">
-                        <h1 class="home-hero__title">
-                            Conseil <em>financier</em><br>
-                            &amp; investissement
-                        </h1>
+            <div class="home-hero__content">
+                    <h1 class="home-hero__title">
+                        Conseil <em>financier</em><br>
+                        &amp; investissement
+                    </h1>
 
-                        <p class="home-hero__description">
-                            Banque d’affaires indépendante, IMPAXIS Capital accompagne les<br class="d-none d-lg-block">
-                            entreprises et les investisseurs dans leurs opérations stratégiques,<br class="d-none d-lg-block">
-                            leurs financements et leurs projets de croissance en Afrique de<br class="d-none d-lg-block">
-                            l’Ouest et centrale.
-                        </p>
+                    <p class="home-hero__description">
+                        Banque d’affaires indépendante, IMPAXIS Capital accompagne les<br class="d-none d-lg-block">
+                        entreprises et les investisseurs dans leurs opérations stratégiques,<br class="d-none d-lg-block">
+                        leurs financements et leurs projets de croissance en Afrique de<br class="d-none d-lg-block">
+                        l’Ouest et centrale.
+                    </p>
 
-                        <a href="#" class="btn home-hero__button">Notre expertises</a>
+                    <a href="#" class="btn home-hero__button">Notre expertises</a>
+            </div>
+
+            <div class="home-hero__stats" aria-label="Chiffres clés">
+                <div class="home-hero__stat">
+                    <span class="home-hero__icon" aria-hidden="true">
+                        {{-- <svg viewBox="0 0 24 24">
+                            <path d="M7 3v3m10-3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>
+                            <path d="M8 13h3m-3 4h6"/>
+                        </svg> --}}
+                        <i class="bi bi-calendar2"></i>
+                    </span>
+                    <div>
+                        <strong>15 ans</strong>
+                        <span>de savoir-faire</span>
+                    </div>
                 </div>
 
-                <div class="home-hero__stats" aria-label="Chiffres clés">
-                    <div class="home-hero__stat">
-                        <span class="home-hero__icon" aria-hidden="true">
-                            {{-- <svg viewBox="0 0 24 24">
-                                <path d="M7 3v3m10-3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>
-                                <path d="M8 13h3m-3 4h6"/>
-                            </svg> --}}
-                            <i class="bi bi-calendar2"></i>
-                        </span>
-                        <div>
-                            <strong>15 ans</strong>
-                            <span>de savoir-faire</span>
-                        </div>
+                <div class="home-hero__stat">
+                    <span class="home-hero__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3v18M7 6h8a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h8"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <strong>+1000 milliards</strong>
+                        <span>de FCFA de fonds levés</span>
                     </div>
+                </div>
 
-                    <div class="home-hero__stat">
-                        <span class="home-hero__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 3v18M7 6h8a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h8"/>
-                            </svg>
-                        </span>
-                        <div>
-                            <strong>+1000 milliards</strong>
-                            <span>de FCFA de fonds levés</span>
-                        </div>
-                    </div>
-
-                    <div class="home-hero__stat">
-                        <span class="home-hero__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24">
-                                <path d="m12 3 7 4v5c0 4-2.5 7-7 9-4.5-2-7-5-7-9V7l7-4Z"/>
-                                <path d="M9 12h6l-3 5-3-5Z"/>
-                            </svg>
-                        </span>
-                        <div>
-                            <strong>Couverture totale de la zone UEMOA, CEMAC</strong>
-                        </div>
+                <div class="home-hero__stat">
+                    <span class="home-hero__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="m12 3 7 4v5c0 4-2.5 7-7 9-4.5-2-7-5-7-9V7l7-4Z"/>
+                            <path d="M9 12h6l-3 5-3-5Z"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <strong>Couverture totale de la zone UEMOA, CEMAC</strong>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -154,7 +151,7 @@
         <div class="container">
             <div class="section__heading text-center">
                 <h2 class="section__title text-white">Équipe</h2>
-                <p class="text-white">
+                <p class="" style="color: #eaeaead1">
                     Une équipe de banquiers d’affaires expérimentés, engagés à<br class="d-none d-md-block">
                     vos côtés pour vous accompagner dans la réalisation de vos<br class="d-none d-md-block">
                     opérations financières et stratégiques en Afrique.
@@ -246,6 +243,36 @@
                 <h2 class="section__title">Nos dernières actualités</h2>
             </div>
             <div class="row g-4">
+                @foreach ($articles as $item)
+                    <div class="col-lg-4">
+                        <article class="news-card">
+                            <img src="{{ $item->getCoverFullUrl() }}"
+                                 class="news-card__image"
+                                 alt="Actualité IMPAXIS Capital">
+
+                            <div class="news-card__body">
+                                <span class="news-card__category">Conseil financier</span>
+                                <h3>Accompagnement stratégique d’un groupe agroalimentaire</h3>
+                                <p>Participation aux échanges sur l’épargne longue, le financement des économies africaines et les marchés capitaux.</p>
+                                <a href="#">Voir la publication</a>
+                            </div>
+                        </article>
+                    </div>
+                @endforeach
+            </div>
+
+            <div class="text-center">
+                <a href="{{ route('front.actualities') }}" class="btn news-section__button">Voir tout</a>
+            </div>
+        </div>
+    </section>
+
+    {{-- <section class="page-section" style="background-color: #D0D8F2;">
+        <div class="container">
+            <div class="section__heading">
+                <h2 class="section__title">Nos dernières actualités</h2>
+            </div>
+            <div class="row g-4">
                 @foreach ([0, 1, 2] as $articleIndex)
                     <div class="col-lg-4">
                         <article class="news-card">
@@ -268,7 +295,7 @@
                 <a href="{{ route('front.actualities') }}" class="btn news-section__button">Voir tout</a>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="page-section">
         <div class="container">

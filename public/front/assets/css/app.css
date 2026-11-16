@@ -20,26 +20,11 @@ h1,h2,h3,h4,h5,h6{
     color:var(--dark);
 }
 
-/* h1 .body-title {
-    font-size:3.5rem;
-    line-height:1.05;
-}
-
-h2 .body-title {
-    font-size:3rem;
-    line-height:1.05;
-} */
-
 p {
     margin-bottom: 0;
     color: var(--text);
     font-size: 1rem;
     line-height: 1.4;
-}
-
-.menu-active {
-    color: var(--secondary);
-    font-weight: 500;
 }
 
 .section__description {
@@ -85,9 +70,6 @@ p {
 }
 
 .home-hero > .container {
-    width: 100%;
-    max-width: 1320px;
-    min-height: 630px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,18 +204,19 @@ p {
 }
 
 .main-header {
-    height:100px;
+    height:80px;
     background-color: var(--body-bg);
     width: 100%;
+    border-bottom: 1.5px solid #d8d8d8;
 }
 
 .main-header .navbar {
-    height:100px;
+    height:80px;
     padding:0;
 }
 
 .logo-impaxis-head {
-    width:130px;
+    width:160px;
     max-width:none;
     height:auto;
 }
@@ -252,7 +235,8 @@ p {
 }
 
 .main-nav .nav-link.active {
-    color:#f29100;
+    color:#f29100 !important;
+    font-weight: 400;
 }
 
 .main-nav .nav-link.active::after {
@@ -296,12 +280,11 @@ p {
 
 .section__title {
     /* margin: 0 auto 52px; */
-    color: #1d1d1d;
-    font-size: 30px;
+    color: var(--title);
+    font-size: 35px;
     font-weight: 500;
     line-height: 1.12;
     margin-bottom: 10px;
-    /* text-align: center; */
 }
 
 .partners-logos {
@@ -516,7 +499,7 @@ i.about-card__icon {
 }
 
 .section__image {
-    height: 100%; /* Prend toute la hauteur de la colonne Bootstrap */
+    /* height: 100%; Prend toute la hauteur de la colonne Bootstrap */
     min-height: 200px; /* Évite que l'image disparaisse sur mobile/tablette */
     overflow: hidden;
     border-radius: 12px;
@@ -620,7 +603,10 @@ i.about-card__icon {
     left: 13px;
 
     /* Fond blanc semi-transparent */
-    background: rgba(255, 255, 255, 0.2);
+    /* background: #ffffff33; */
+    /* background: #F2910040; */
+    background: #00000050;
+    /* background: #F2910028; */
     /* background: rgba(21, 21, 21, .66); */
     /* Bords arrondis */
     border-radius: 8px;
@@ -634,7 +620,8 @@ i.about-card__icon {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     /* Espacement interne */
     padding: 16px 18px;
-    color: #fff;
+    color: #F29100;
+    /* color: #fff; */
 }
 
 .glass-card h3 {
