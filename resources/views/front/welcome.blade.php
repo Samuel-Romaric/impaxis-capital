@@ -20,7 +20,7 @@
                         l’Ouest et centrale.
                     </p>
 
-                    <a href="#" class="btn home-hero__button">Notre expertises</a>
+                    <a href="{{ route('front.expertises') }}" class="btn home-hero__button">Notre expertises</a>
             </div>
 
             <div class="home-hero__stats" aria-label="Chiffres clés">
