@@ -68,13 +68,18 @@ p {
     color: #fff;
 }
 
+/* .home-hero > .container {
+    max-width: 1200px;
+} */
+
 .home-hero > .container { 
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    padding-top: 24px !important;
-    padding-bottom: 32px !important;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    max-width: 1150px;
 }
 
 .home-hero__content {
