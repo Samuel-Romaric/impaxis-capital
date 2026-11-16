@@ -69,7 +69,7 @@ p {
 }
 
 .home-hero > .container {
-    max-width: 1150px;
+    max-width: 1150px !important;
 }
 
 .home-hero > .container { 
