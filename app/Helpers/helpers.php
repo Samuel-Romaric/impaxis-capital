@@ -11,7 +11,7 @@ if (!function_exists('active')) {
     {
         foreach ($routes as $route) {
             if (request()->routeIs($route)) {
-                return 'active';
+                return 'active'; 
                 // return request()->routeIs('front.contact') ? 'activeContactBtn' : 'active';
             }
         }
