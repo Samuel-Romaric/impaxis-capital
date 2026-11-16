@@ -68,10 +68,6 @@ p {
     color: #fff;
 }
 
-.home-hero > .container {
-    max-width: 1150px !important;
-}
-
 .home-hero > .container { 
     display: flex;
     flex-direction: column;
@@ -79,6 +75,7 @@ p {
     position: relative;
     padding-top: 24px;
     padding-bottom: 32px;
+    min-width: 1150px !important;
 }
 
 .home-hero__content {
