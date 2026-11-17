@@ -2,7 +2,16 @@
 
 @section('title', 'Accueil')
 
-
+@push('style')
+    <style>
+        .home-hero {
+            background:
+                /* linear-gradient(90deg, rgba(4, 13, 29, .78) 0%, rgba(4, 13, 29, .35) 48%, rgba(4, 13, 29, .12) 100%), */
+                linear-gradient(90deg, rgba(0, 0, 0, .82), rgba(0, 0, 0, .12)),
+                url("{{ asset('front/assets/images/slide-bg.png') }}") center center / cover no-repeat;
+        }
+    </style>
+@endpush
 
 @section('content')
     <section class="home-hero">
@@ -59,7 +68,6 @@
                         <strong>Couverture totale de la zone UEMOA, CEMAC</strong>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
@@ -146,7 +154,7 @@
         </div>
     </section>
 
-    <section class="page-section team-section fade-up">
+    <section class="page-section section-bg-blue fade-up">
         <div class="container">
             <div class="section__heading text-center">
                 <h2 class="section__title text-white">Équipe</h2>
@@ -157,7 +165,7 @@
                 </p>
             </div>
 
-            <div class="row g-4 team-section__members">
+            <div class="row g-4 section-width-100">
                 <div class="col-md-4">
                     <article class="team-member">
                         <img src="{{ asset('front/assets/images/team/momar-ndour.png') }}" alt="Momar Ndour">
@@ -250,10 +258,10 @@
                                  alt="Actualité IMPAXIS Capital">
 
                             <div class="news-card__body">
-                                <span class="news-card__category">Conseil financier</span>
-                                <h3>Accompagnement stratégique d’un groupe agroalimentaire</h3>
-                                <p>Participation aux échanges sur l’épargne longue, le financement des économies africaines et les marchés capitaux.</p>
-                                <a href="#">Voir la publication</a>
+                                <span class="news-card__category">{{ $item->category->title }}</span>
+                                <h3>{{ $item->title }}</h3>
+                                <p>{{ $item->short_description }}</p>
+                                <a href="{{ route('front.actualite.show', ['item_id' => $item->id, 'slug' => $item->slug]) }}">Voir la publication</a>
                             </div>
                         </article>
                     </div>
@@ -270,7 +278,7 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-5">
-                    <h2 class="contact-section__title">Contact</h2>
+                    <h2 class="section__title">Contact</h2>
 
                     <div class="row contact-section__details">
                         <div class="col-sm-6">
@@ -293,7 +301,7 @@
                 </div>
 
                 <div class="col-lg-7">
-                    <h2 class="contact-section__form-title">Formulaire de contact</h2>
+                    <h2 class="section__title">Formulaire de contact</h2>
 
                     <form class="contact-form">
                         <div class="mb-3">
@@ -322,6 +330,6 @@
 @endsection
 
 
-@push('scripts')
+@push('script')
     <script></script>
 @endpush

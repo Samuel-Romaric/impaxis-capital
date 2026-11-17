@@ -54,7 +54,15 @@ class ManagerController extends Controller
 
     public function ActulatiesAll() 
     {
-        return view('front.actualities.index');
+        $articles = Post::where('status', 'published')->get();
+        return view('front.actualities.index', compact('articles'));
+    }
+
+    public function ActualiteShow(int $item_id, string $slug) 
+    {
+        $item = Post::where('id', $item_id)->where('slug', $slug)->where('status', 'published')->first();
+        
+        return view('front.actualities.show', compact('item'));
     }
 
     public function Contact() 

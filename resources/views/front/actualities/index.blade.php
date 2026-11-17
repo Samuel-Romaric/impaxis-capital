@@ -2,6 +2,16 @@
 
 @section('title', 'Actualités')
 
+@push('style')
+    <style>
+        .section-header {
+            background:
+                /* linear-gradient(90deg, rgba(4, 13, 29, .78) 0%, rgba(4, 13, 29, .35) 48%, rgba(4, 13, 29, .12) 100%), */
+                linear-gradient(90deg, rgba(0, 0, 0, .82), rgba(0, 0, 0, .12)),
+                url("{{ asset('front/assets/images/head-bg.png') }}") center center / cover no-repeat;
+        }
+    </style>
+@endpush
 
 @section('content')
     <section class="section-header">
@@ -28,18 +38,18 @@
                 <h2 class="section__title">Nos dernières actualités</h2>
             </div> --}}
             <div class="row g-4">
-                @foreach ([0, 1, 2, 3, 4, 5] as $articleIndex)
-                    <div class="col-lg-4 fade-up">
+                @foreach ($articles as $item)
+                    <div class="col-lg-4">
                         <article class="news-card">
-                            <img src="{{ asset('front/assets/images/news/article-default.png') }}"
+                            <img src="{{ $item->getCoverFullUrl() }}"
                                  class="news-card__image"
                                  alt="Actualité IMPAXIS Capital">
 
                             <div class="news-card__body">
-                                <span class="news-card__category" style="background: #fff">Conseil financier</span>
-                                <h3>Accompagnement stratégique d’un groupe agroalimentaire</h3>
-                                <p>Participation aux échanges sur l’épargne longue, le financement des économies africaines et les marchés capitaux.</p>
-                                <a href="#">Voir la publication</a>
+                                <span class="news-card__category">{{ $item->category->title }}</span>
+                                <h3>{{ $item->title }}</h3>
+                                <p>{{ $item->short_description }}</p>
+                                <a href="{{ route('front.actualite.show', ['item_id' => $item->id, 'slug' => $item->slug]) }}">Voir la publication</a>
                             </div>
                         </article>
                     </div>
@@ -53,3 +63,8 @@
     </section>
     
 @endsection
+
+
+@push('script')
+    <script></script>
+@endpush

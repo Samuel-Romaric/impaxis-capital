@@ -12,4 +12,9 @@ class Category extends Model
         'slug',
         'description',
     ];
+
+    public function Posts() 
+    {
+        return $this->hasMany(Post::class, 'category_id');
+    }
 }

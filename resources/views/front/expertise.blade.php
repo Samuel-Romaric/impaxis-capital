@@ -2,6 +2,16 @@
 
 @section('title', 'Expertise')
 
+@push('style')
+    <style>
+        .section-header {
+            background:
+                /* linear-gradient(90deg, rgba(4, 13, 29, .78) 0%, rgba(4, 13, 29, .35) 48%, rgba(4, 13, 29, .12) 100%), */
+                linear-gradient(90deg, rgba(0, 0, 0, .82), rgba(0, 0, 0, .12)),
+                url("{{ asset('front/assets/images/head-bg.png') }}") center center / cover no-repeat;
+        }
+    </style>
+@endpush
 
 @section('content')
     <section class="section-header">

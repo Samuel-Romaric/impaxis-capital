@@ -2,10 +2,21 @@
 
 @section('title', 'Nous connaître')
 
+@push('style')
+    <style>
+        .section-header {
+            background:
+                /* linear-gradient(90deg, rgba(4, 13, 29, .78) 0%, rgba(4, 13, 29, .35) 48%, rgba(4, 13, 29, .12) 100%), */
+                linear-gradient(90deg, rgba(0, 0, 0, .82), rgba(0, 0, 0, .12)),
+                url("{{ asset('front/assets/images/head-bg.png') }}") center center / cover no-repeat;
+        }
+    </style>
+@endpush 
+
 @section('content')
-    <section class="about-hero">
+    <section class=" section-header">
         <div class="container">
-            <div class="about-hero__content">
+            <div class="section-header__content">
                 <h1>Parlons de vos projets </h1>
                 <p>Vous avez un projet de financement, une opération stratégique ou un <br class="d-none d-lg-block">
                     besoin de conseil financier ? Notre équipe est à votre écoute pour<br class="d-none d-lg-block"> 

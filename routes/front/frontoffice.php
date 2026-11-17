@@ -7,5 +7,6 @@ Route::get('/', [ManagerController::class, 'Welcome'])->name('welcome');
 Route::get('/nous-connaitre', [ManagerController::class, 'NousConnaitre'])->name('nous-connaitre');
 Route::get('/expertise', [ManagerController::class, 'Expertise'])->name('expertises');
 Route::get('/transactions', [ManagerController::class, 'TransactionAll'])->name('transactions');
-Route::get('/actualities', [ManagerController::class, 'ActulatiesAll'])->name('actualities');
+Route::get('/actualites', [ManagerController::class, 'ActulatiesAll'])->name('actualities');
+Route::get('/actualite/{item_id}/{slug}', [ManagerController::class, 'ActualiteShow'])->name('actualite.show');
 Route::get('/contact', [ManagerController::class, 'Contact'])->name('contact');

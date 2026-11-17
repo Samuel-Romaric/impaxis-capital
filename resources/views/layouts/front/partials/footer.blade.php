@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row site-footer__top">
             <div class="col-lg-7">
-                {{-- <h2>Impaxis Capital</h2> --}}
-                <img src="{{ asset('front/assets/images/logo-impaxis-capital.png') }}" class="logo-impaxis-footer" alt="Impaxis Capital">
+                <h2>Impaxis Capital</h2>
+                {{-- <img src="{{ asset('front/assets/images/logo-impaxis-capital.png') }}" class="logo-impaxis-footer" alt="Impaxis Capital"> --}}
                 <p class="site-footer__intro">
                     Banque d’affaires indépendante au service des<br class="d-none d-md-block">
                     entreprises et des investisseurs en Afrique.
@@ -17,7 +17,8 @@
                         <label for="newsletter-email" class="visually-hidden">Votre adresse e-mail</label>
                         <input type="email" id="newsletter-email" name="email"
                                placeholder="Votre adresse e-mail" required>
-                        <button type="submit" aria-label="S'abonner à la newsletter"><span>↗</span></button>
+                        {{-- <button type="submit" aria-label="S'abonner à la newsletter"><span>↗</span></button> --}}
+                        <button type="submit" aria-label="S'abonner à la newsletter"><span><i class="bi bi-newspaper"></i></span></button>
                     </form>
                 </div>
             </div>
