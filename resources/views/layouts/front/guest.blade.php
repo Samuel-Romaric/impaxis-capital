@@ -167,15 +167,17 @@
                 width: 42px;
                 height: 42px;
                 flex: 0 0 42px;
-                display: inline-flex;
+                display: inline-flex !important;
+                /* display: flex; */
                 align-items: center;
                 justify-content: center;
                 border-radius: 50%;
                 background: #f0dc00;
                 color: #183b69;
+                font-weight: 500;
             }
 
-            .home-hero__icon svg {
+            .home-hero__icon i {
                 width: 25px;
                 height: 25px;
                 fill: none;
@@ -372,9 +374,9 @@
                 max-width: 155px;
                 max-height: 78px;
                 width: auto; /* Permet aux images de conserver leurs proportions */
-                height: 120px; /* Permet aux images de conserver leurs proportions */
+                height: auto; /* Permet aux images de conserver leurs proportions */
                 object-fit: contain; /* Assure que l'image est contenue dans le conteneur sans être déformée */
-                filter: grayscale(100%); /* Rend les logos en niveaux de gris */
+                /*filter: grayscale(100%);  Rend les logos en niveaux de gris */
             }
 
             .partners-logos img:hover {
@@ -489,7 +491,8 @@
                 font-size: 24px;
                 font-weight: 400;
                 /* color: #fff; */
-                color: var(--secondary);
+                /* color: var(--secondary); */
+                color: #fff;
                 font-weight: 500;
             }
 
@@ -659,20 +662,33 @@
 
             .contact-section__details {
                 row-gap: 48px;
+                background: rgba(255, 255, 255, .82);
+                padding: 10px;
+                border-radius: 10px;
             }
 
             .contact-section__details h3 {
-                margin-bottom: 14px;
-                color: #4a4a4a;
-                font-size: 15px;
+                margin-bottom: 8px;
+                margin-top: 10px;
+                color: var(--secondary);
+                font-size: 16px;
                 font-weight: 400;
+            }
+
+            .contact-section__details h3 span {
+                /* margin-bottom: 14px; */
+                color: #ffffff;
+                background: var(--primary);
+                padding: 3px;
+                border-radius: 6px;
             }
 
             .contact-section__details p,
             .contact-section__details a {
                 margin-bottom: 0;
-                color: #222;
-                font-size: 18px;
+                /* color: #222; */
+                color: rgba(95, 95, 95, 0.82);
+                font-size: 16px;
                 line-height: 1.5;
                 text-decoration: none;
             }

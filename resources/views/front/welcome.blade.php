@@ -33,10 +33,6 @@
             <div class="home-hero__stats" aria-label="Chiffres clés">
                 <div class="home-hero__stat">
                     <span class="home-hero__icon" aria-hidden="true">
-                        {{-- <svg viewBox="0 0 24 24">
-                            <path d="M7 3v3m10-3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>
-                            <path d="M8 13h3m-3 4h6"/>
-                        </svg> --}}
                         <i class="bi bi-calendar2"></i>
                     </span>
                     <div>
@@ -47,9 +43,7 @@
 
                 <div class="home-hero__stat">
                     <span class="home-hero__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 3v18M7 6h8a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h8"/>
-                        </svg>
+                        <i class="bi bi-wallet"></i>
                     </span>
                     <div>
                         <strong>+1000 milliards</strong>
@@ -59,10 +53,7 @@
 
                 <div class="home-hero__stat">
                     <span class="home-hero__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24">
-                            <path d="m12 3 7 4v5c0 4-2.5 7-7 9-4.5-2-7-5-7-9V7l7-4Z"/>
-                            <path d="M9 12h6l-3 5-3-5Z"/>
-                        </svg>
+                        <i class="bi bi-bank"></i>
                     </span>
                     <div>
                         <strong>Couverture totale de la zone UEMOA, CEMAC</strong>
@@ -278,48 +269,86 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-5">
-                    <h2 class="section__title">Contact</h2>
+                    <h2 class="section__title mb-4">Contact</h2>
 
                     <div class="row contact-section__details">
                         <div class="col-sm-6">
-                            <h3>Localisation</h3>
+                            <h3><span><i class="bi bi-geo"></i></span> Localisation</h3>
                             <p>Sacrée-Cœur 3 Extension VDN - Villa N°1 077</p>
                         </div>
                         <div class="col-sm-6">
-                            <h3>Contact</h3>
+                            <h3><span><i class="bi bi-telephone-inbound"></i></span> Téléphone</h3>
                             <p>+221 33 869 31 40<br>+221 33 864 53 41</p>
                         </div>
                         <div class="col-sm-6">
-                            <h3>Mail</h3>
+                            <h3><span><i class="bi bi-envelope-at"></i></span> Mail</h3>
                             <p><a href="mailto:contact@impaxiscapital.com">contact@impaxiscapital.com</a></p>
                         </div>
                         <div class="col-sm-6">
-                            <h3>Horaires d'ouverture</h3>
+                            <h3><span><i class="bi bi-stopwatch"></i></span> Horaires d'ouverture</h3>
                             <p>Du lundi au vendredi<br>8h00 - 17h00</p>
                         </div>
                     </div>
+
+                    {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4073.0275892646796!2d-17.47056583133393!3d14.697948266050771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172aee90fe38d%3A0x7d065f6a1d49cb01!2sImpaxis%20Securities!5e0!3m2!1sfr!2sci!4v1794947713630!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe> --}}
                 </div>
 
                 <div class="col-lg-7">
-                    <h2 class="section__title">Formulaire de contact</h2>
+                    <h2 class="section__title mb-4">Formulaire de contact</h2>
 
                     <form class="contact-form">
-                        <div class="mb-3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="contact-name" class="visually-hidden">Nom et prénom</label>
+                                    <input type="text" class="form-control" id="contact-name" placeholder="Nom et prénom">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="contact-email" class="visually-hidden">Adresse e-mail professionnelle</label>
+                                    <input type="email" class="form-control" id="contact-email" placeholder="Adresse e-mail">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="contact-company" class="visually-hidden">Entreprise</label>
+                                    <input type="text" class="form-control" id="contact-company" placeholder="Entreprise">
+                                </div>
+                            </div>
+                        </div>
+                        {{-- <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label for="contact-company" class="visually-hidden">Entreprise</label>
+                                    <input type="text" class="form-control" id="contact-company" placeholder="Entreprise">
+                                </div>
+                            </div>
+                        </div> --}}
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label for="contact-message" class="visually-hidden">Message</label>
+                                    <textarea class="form-control" id="contact-message" rows="4" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        {{-- <div class="mb-3">
                             <label for="contact-name" class="visually-hidden">Nom et prénom</label>
                             <input type="text" class="form-control" id="contact-name" placeholder="Nom et prénom">
                         </div>
                         <div class="mb-3">
                             <label for="contact-email" class="visually-hidden">Adresse e-mail professionnelle</label>
                             <input type="email" class="form-control" id="contact-email" placeholder="Adresse e-mail professionnelle">
-                        </div>
-                        <div class="mb-3">
+                        </div> --}}
+                        {{-- <div class="mb-3">
                             <label for="contact-company" class="visually-hidden">Entreprise</label>
                             <input type="text" class="form-control" id="contact-company" placeholder="Entreprise">
-                        </div>
-                        <div class="mb-3">
+                        </div> --}}
+                        {{-- <div class="mb-3">
                             <label for="contact-message" class="visually-hidden">Message</label>
                             <textarea class="form-control" id="contact-message" rows="5" placeholder="Message"></textarea>
-                        </div>
+                        </div> --}}
                         <button type="submit" class="btn contact-form__submit">Envoyer</button>
                     </form>
                 </div>
